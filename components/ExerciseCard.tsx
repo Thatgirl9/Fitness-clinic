@@ -21,9 +21,6 @@ const ExerciseCard: React.FC<ExerciseCardProps> = ({
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
   ) => {
     e.preventDefault();
-    console.log("Watch Video clicked"); // For debugging
-    console.log("Video URL:", videoUrl);
-    // For debugging
     setShowVideo(true);
   };
 
@@ -72,16 +69,6 @@ const ExerciseCard: React.FC<ExerciseCardProps> = ({
         >
           Watch Video
         </a>
-
-        {/* <div className="relative w-full h-0 pb-[56.25%]">
-          <iframe
-            className="absolute top-0 left-0 w-full h-full"
-            src={videoUrl.replace("watch?v=", "embed/")}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            title={title}
-          ></iframe>
-        </div> */}
       </div>
     );
   };
@@ -95,7 +82,7 @@ const ExerciseCard: React.FC<ExerciseCardProps> = ({
       />
       <div className="p-[1em]">
         <h3 className="mt-2 font-semibold">{title}</h3>
-        {showVideo && title === title && (
+        {showVideo && (
           <div className="relative w-full h-0 pb-[56.25%]">
             <iframe
               className="absolute top-0 left-0 w-full h-full"
@@ -106,16 +93,6 @@ const ExerciseCard: React.FC<ExerciseCardProps> = ({
             ></iframe>
           </div>
         )}
-
-        {/* <div className="relative w-full h-0 pb-[56.25%]">
-          <iframe
-            className="absolute top-0 left-0 w-full h-full"
-            src={videoUrl.replace("watch?v=", "embed/")}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            title={title}
-          ></iframe>
-        </div> */}
 
         <div className="flex md:flex-row flex-col gap-4 justify-between items-center mt-[2em]">
           <a

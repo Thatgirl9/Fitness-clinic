@@ -1,5 +1,3 @@
-// import Woman from "../assets/image 1.png";
-// import { Link } from "react-router-dom";
 import Link from "next/link";
 import Woman from "../public/LadyExercising.png";
 import Image from "next/image";

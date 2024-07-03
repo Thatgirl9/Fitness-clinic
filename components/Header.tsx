@@ -20,7 +20,6 @@ const Header: React.FC = () => {
     <header
       className={`bg-bg-primary w-full md:px-14 px-6 py-5 lg:py-6 z-50 fixed top-0 left-0 right-0
     text-text-primary `}
-      // fixed z-50
     >
       {/* second header */}
       <nav className="md:flex md:justify-between md:items-center">
@@ -84,7 +83,6 @@ const Header: React.FC = () => {
               </div>
             ))}
           </div>
-          {/* </ul> */}
         </div>
       </nav>
     </header>

@@ -27,8 +27,6 @@ const ExerciseCalendar: React.FC<ExerciseCalendarProps> = ({ exercise }) => {
     }
   }, [value, exercise]);
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-
   return (
     <div className="calendar-modal text-bg-primary">
       <Calendar onChange={onChange} value={value} />
