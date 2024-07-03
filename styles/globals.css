@@ -30,6 +30,11 @@
   box-sizing: border-box;
 }
 
+.thumbnail {
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
